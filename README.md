@@ -1,16 +1,16 @@
-# 🔊 GOYO  
+# GOYO  
 ### *An AI-Based Active Noise Control System for Smart Home Environments*  
 
 ---
 
-## 📌 Project Overview  
+## Project Overview  
 
 **GOYO** is a smart home application that integrates AI-based noise analysis with IoT-enabled devices to detect, predict, and actively cancel low-frequency household noise in real time.  
 By connecting external microphones and smart speakers, the system helps users maintain focus and comfort during study, work, or entertainment.
 
 ---
 
-## 👥 Team Members  
+## Team Members  
 
 | Name | Organization | Email |
 |------|---------------|-------|
