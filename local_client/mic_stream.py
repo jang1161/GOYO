@@ -1,6 +1,6 @@
 import os
-import pyaudio
-import numpy as np
+import pyaudio # type: ignore
+import numpy as np # type: ignore
 from datetime import datetime
 from collections import deque
 
