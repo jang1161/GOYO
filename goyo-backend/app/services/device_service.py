@@ -19,7 +19,7 @@ class DeviceService:
                 mic["device_id"],
                 {
                     "discovered": True, 
-                    "discovered_at": datetime.now(datetime.timezone.utc).isoformat(),
+                    "discovered_at": datetime.utcnow().isoformat(),
                     "type": "usb_microphone"
                 },
                 expire=300

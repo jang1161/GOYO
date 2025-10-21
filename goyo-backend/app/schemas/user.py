@@ -18,7 +18,8 @@ class UserResponse(UserBase):
     id: int
     is_active: bool
     is_verified: bool
-    preferred_mode: str
+    anc_enabled: bool
+    suppression_level: int
     created_at: datetime
     
     class Config:

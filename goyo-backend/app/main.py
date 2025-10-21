@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import auth
+from app.api import auth, devices, profile  # profile 추가
 from app.database import engine, Base
 
 # Create tables
@@ -9,13 +9,13 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="GOYO Backend API",
     description="AI-Based Active Noise Control System",
-    version="1.0.0"
+    version="2.0.0"
 )
 
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 프로덕션에서는 제한 필요
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -23,12 +23,14 @@ app.add_middleware(
 
 # Include routers
 app.include_router(auth.router)
+app.include_router(devices.router)
+app.include_router(profile.router)  # 추가
 
 @app.get("/")
 def root():
     return {
         "message": "GOYO Backend API",
-        "version": "1.0.0",
+        "version": "2.0.0",
         "status": "running"
     }
 
