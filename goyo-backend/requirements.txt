@@ -13,4 +13,5 @@ paho-mqtt==1.6.1
 python-dotenv==1.0.0
 alembic==1.13.1
 pyaudio==0.2.14
-numpy==1.26.3
+numpy==1.26.3fas
+email-validator==2.0.0
